@@ -49,6 +49,24 @@ body {
     transform: translateY(-15px);
   }
 }
+/* MOBILE HERO FIX */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 70px;   /* navbar height ku space */
+  }
+}
+/* MOBILE HERO TEXT SIZE FIX */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;     /* mobile ku small */
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
+
 
 /* BUTTON */
 .btn-main {
@@ -100,7 +118,8 @@ body {
   width: 100%;
   max-width: 520px;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 40px rgba(243, 217, 217, 0.12);
+ 
 }
 
 /* SECTIONS */
@@ -109,7 +128,7 @@ body {
 ================================ */
 
 .services-section {
-  background: #f8f9fa;
+  background: linear-gradient(180deg, #120a2a, #05040a);
   padding: 70px 0;
 }
 
@@ -156,19 +175,22 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    rgba(0,0,0,0.55),
-    rgba(0,0,0,0.75)
+    rgba(0,0,0,0.15),
+    rgba(0,0,0,0.25)
   );
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+  justify-content: flex-end;   /* 🔥 bottom */
+  align-items: flex-start;     /* 🔥 left align */
+
   padding: 20px;
   color: #fff;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
+
 
 .service-overlay h5 {
   font-size: 18px;
@@ -196,6 +218,22 @@ body {
 
 .service-hover-card:hover .service-overlay {
   opacity: 1;
+}
+/* MOBILE VIEW – ALWAYS SHOW TEXT */
+@media (max-width: 768px) {
+
+  .always-show-mobile .service-overlay {
+    opacity: 1;              /* always visible */
+    background: linear-gradient(
+      rgba(0,0,0,0.25),
+      rgba(0,0,0,0.15)
+    );
+  }
+
+  .always-show-mobile img {
+    transform: none !important; /* stop zoom on mobile */
+  }
+
 }
 
 /* ===============================
@@ -239,10 +277,11 @@ body {
   width: 100%;
 }
 .our-works-section {
-  background: #0b0b0f;
+ background: #eef2f7;
   padding-top: 60px !important;   /* 🔥 force gap */
   padding-bottom: 60px !important;
 }
+
 .work-card {
   background: #1c1c1c;
   border-radius: 24px;                 /* 🔥 smooth round */
@@ -289,8 +328,8 @@ body {
 /* CTA SECTION */
 .cta-section {
   background: 
-    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
-    url("../assets/contact2.jpg") center/cover no-repeat;
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url("../assets/contact6.jpg") center/cover no-repeat;
   
   padding: 50px 0;   /* 🔥 height reduced */
 }
