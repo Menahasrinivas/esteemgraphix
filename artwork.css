@@ -1,0 +1,213 @@
+/* ================= ARTWORK BANNER ================= */
+
+
+.artwork-banner {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+   margin-top: 60px; 
+}
+
+.artwork-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15,15,36,0.25),
+    rgba(20,20,42,0.25)
+  );
+}
+
+.artwork-banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.artwork-banner p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* ================= ARTWORK SECTION ================= */
+
+.artwork-section {
+  background: linear-gradient(180deg, #0f0f24, #0b0b0f);
+  color: #fff;
+  padding: 70px 0;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 32px;
+  color: #7f5af0;   /* 🔥 purple accent */
+}
+
+/* ================= ART SERVICE CARD ================= */
+
+
+
+.art-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.art-card li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 15px;
+  color: #e0e0e0;
+}
+
+/* ================= ART CARD BASE ================= */
+
+/* ================= ART CARD BASE – LIGHT ROYAL ================= */
+.art-card {
+  border-radius: 22px;
+  padding: 30px;
+  height: 100%;
+  
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  transition: all 0.4s ease;
+}
+
+
+.grad-card-1 {
+background:
+    linear-gradient(
+      135deg,
+      rgba(90,134,255,0.9),
+      rgba(44,182,197,0.85),
+      rgba(15,15,36,1)
+    );
+}
+
+.grad-card-2 {
+  background: linear-gradient(
+    135deg,
+    #4d7cff,   /* electric blue */
+    #2cb6c5,   /* cyan */
+    #0f0f24    /* midnight */
+  );
+}
+
+.grad-card-3 {
+  background: linear-gradient(
+    135deg,
+    #4d7cff,   /* electric blue */
+    #2cb6c5,   /* cyan */
+    #0f0f24    /* midnight */
+  );
+}
+
+
+/* ================= LIST STYLE ================= */
+
+.art-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.art-card li {
+  position: relative;
+  padding: 14px 14px 14px 20px;
+  font-size: 16px;
+  font-weight: 500; 
+  color: #0f172a;   /* 🔥 dark text for light bg */
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+}
+
+
+/* LEFT INDICATOR LINE */
+.art-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(
+    180deg,
+    #9b8cff,   /* brighter purple */
+    #3cffb5    /* brighter green */
+  );
+  border-radius: 12px;
+  transform: translateY(-50%);
+  transition: height 0.35s ease;
+}
+
+/* ================= LINE HOVER EFFECT ================= */
+.art-card li:hover {
+  color: #000;
+ background: rgba(255,255,255,0.15);  /* soft purple */
+  padding-left: 28px;
+  font-weight: 600;  
+}
+
+
+.art-card li:hover::before {
+  height: 70%;
+   box-shadow:
+    0 0 12px rgba(155,140,255,0.9),
+    0 0 22px rgba(60,255,181,0.8);
+}
+
+/* ================= CARD HOVER ================= */
+
+.art-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* ================= TURN AROUND ================= */
+
+.turnaround-box {
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  padding: 35px;
+  border-radius: 22px;
+  color: #fff;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+}
+
+.turnaround-box h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.turnaround-box p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ================= HOVER EFFECT ================= */
+
+.hover-zoom:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .artwork-banner {
+  
+     height: 260px;   /* mobile optimized */
+    margin-top: 60px;
+  }
+
+  .artwork-banner h1 {
+    font-size: 32px;
+  }
+
+  .section-heading {
+    font-size: 26px;
+  }
+}

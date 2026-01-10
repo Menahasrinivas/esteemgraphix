@@ -1,0 +1,213 @@
+/* ================= BANNER ================= */
+
+.web-banner {
+  position: relative;
+  height: 350px;          /* 🔥 reduced height */
+  margin-top: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Image */
+.web-banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* image cut aagadhu */
+}
+
+/* Overlay */
+.web-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15,15,36,0.55),
+    rgba(0,0,0,0.65)
+  );
+}
+
+
+.web-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(127,90,240,0.35), rgba(0,0,0,0.85));
+}
+
+.web-banner h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.web-banner p {
+  color: #d0d0ff;
+  font-size: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ================= MAIN ================= */
+
+.web-section {
+  background: linear-gradient(180deg, #0b0b0f, #0f0f24);
+  color: #fff;
+  padding: 70px 0;
+}
+
+.lead-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #d1d1d1;
+}
+
+/* ================= SERVICE CARDS ================= */
+
+.web-card {
+    background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  
+  border-radius: 18px;
+  padding: 22px;
+  text-align: center;
+  font-weight: 600;
+  transition: all 0.35s ease;
+}
+
+.web-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: linear-gradient(135deg, rgba(127,90,240,0.15), rgba(44,182,125,0.15));
+  color: #fff;
+}
+
+
+/* IMAGE CONTAINER */
+.getting-img-box {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #7f5af0, #2cb67d);
+  padding: 6px;                    /* 🔥 gradient border feel */
+  box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+  transition: all 0.45s ease;
+}
+
+/* IMAGE */
+.getting-img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 18px;
+  object-fit: cover;               /* cut aagadhu */
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+/* 3D + HOVER */
+.getting-img-box:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 40px 70px rgba(0,0,0,0.6);
+}
+
+.getting-img-box:hover img {
+  transform: scale(1.08);          /* 🔥 soft zoom */
+}
+
+
+/* ================= INFO BOX – PREMIUM LIGHT ================= */
+.info-box.gs-light {
+  background: linear-gradient(135deg, #ac93f6, #2cb67d);
+}
+
+.info-box {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.92),
+    rgba(245,248,255,0.88)
+  );
+  padding: 32px;
+  border-radius: 22px;
+  line-height: 1.8;
+  color: #1a1a1a;                 /* 🔥 dark text */
+  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  transition: all 0.35s ease;
+}
+
+/* Headings */
+.info-box h3 {
+  color: #7f5af0;                 /* brand purple */
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* Paragraphs */
+.info-box p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Hover – very subtle */
+.info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 55px rgba(0,0,0,0.45);
+}
+
+/* ================= PROJECT COMPLETION ================= */
+
+.completion-box {
+  background: linear-gradient(
+    135deg,
+    rgba(240,248,255,0.95),
+    rgba(255,255,255,0.9)
+  );
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .web-banner {
+    min-height: 260px;
+  }
+
+  .web-banner h1 {
+    font-size: 30px;
+  }
+
+  .web-section {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 768px) {
+  .info-box {
+    padding: 24px;
+  }
+
+  .info-box p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .web-banner {
+    height: 200px;        /* 🔥 perfect for mobile */
+    margin-top: 60px;
+  }
+
+  .web-banner h1 {
+    font-size: 26px;
+  }
+
+  .web-banner p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .getting-img-box {
+    margin-bottom: 25px;           /* text-ku space */
+    border-radius: 18px;
+  }
+
+  .getting-img-box img {
+    border-radius: 14px;
+  }
+}

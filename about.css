@@ -1,0 +1,115 @@
+/* ================= GENERAL ================= */
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.7;
+}
+
+/* ================= ABOUT BANNER ================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-banner {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.about-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 IMPORTANT */
+}
+
+
+/* Dark Overlay */
+.about-banner-overlay {
+  background: rgba(0,0,0,0.15); /* 🔥 VERY LIGHT */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-banner {
+    height: 220px;
+  }
+
+  .about-banner h1 {
+    font-size: 32px;
+  }
+}
+
+
+.about-banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.about-banner p {
+  font-size: 18px;
+}
+
+/* ================= ABOUT SECTION ================= */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 17px;
+  color: #555;
+}
+
+/* ================= ABOUT BOX ================= */
+.about-box {
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+}
+
+.about-box h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* ================= HOVER ZOOM ================= */
+.hover-zoom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: #111;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .about-banner {
+    height: 220px;
+  }
+
+  .about-banner h1 {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    max-width: 100vw;
+  }
+}
+/* ===== FIX BOOTSTRAP ROW OVERFLOW (MOBILE) ===== */
+@media (max-width: 768px) {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

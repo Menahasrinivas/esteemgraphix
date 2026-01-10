@@ -1,0 +1,82 @@
+/* ================= GLOBAL ================= */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0b0b0f;
+  color: #fff;
+}
+
+/* ================= BANNER ================= */
+.faq-banner {
+  background: linear-gradient(135deg, #0f0f24, #1a1a3a);
+  padding: 90px 0 70px;
+  text-align: center;
+}
+
+.faq-banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #ff9f1c; /* 🔥 Esteem orange */
+}
+
+.faq-banner p {
+  font-size: 16px;
+  color: #d0d0ff;
+}
+
+/* ================= FAQ SECTION ================= */
+.faq-section {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #0b0b0f, #0f0f24);
+}
+
+/* ================= FAQ CARD ================= */
+.faq-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.96),
+    rgba(245,248,255,0.92)
+  );
+  padding: 28px 30px;
+  border-radius: 22px;
+  margin-bottom: 25px;
+  color: #222;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+  transition: all 0.4s ease;
+}
+
+.faq-card h5 {
+  font-weight: 700;
+  color: #7f5af0;
+  margin-bottom: 10px;
+}
+
+.faq-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Hover effect */
+.faq-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 35px 65px rgba(0,0,0,0.45);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .faq-banner h1 {
+    font-size: 30px;
+  }
+
+  .faq-section {
+    padding: 50px 0;
+  }
+
+  .faq-card {
+    padding: 22px;
+  }
+
+  .faq-card p {
+    font-size: 14px;
+  }
+}
