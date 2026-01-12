@@ -183,29 +183,33 @@
 
   
   
-  
-  const buttons = document.querySelectorAll(".filter-btn");
-  const items = document.querySelectorAll(".portfolio-item");
+ 
+document.addEventListener("DOMContentLoaded", () => {
 
-  buttons.forEach(btn => {
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
 
-      // active button change
-      buttons.forEach(b => b.classList.remove("active"));
+      // active button color
+      filterBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
       const filter = btn.dataset.filter;
 
-      items.forEach(item => {
+      portfolioItems.forEach(item => {
         if (item.classList.contains(filter)) {
-          item.classList.remove("hide");
+          item.style.display = "block";
         } else {
-          item.classList.add("hide");
+          item.style.display = "none";
         }
       });
 
     });
   });
+
+});
 </script>
 
 </body>
