@@ -1,0 +1,123 @@
+/* ================= FOOTER ================= */
+.site-footer {
+  background: linear-gradient(180deg, #0b0b0f, #0f0f24);
+  padding: 50px 0 30px;
+  color: #d1d1d1;
+  font-size: 14px;
+  margin-top: 0 !important;
+}
+
+/* Brand & Quote */
+.footer-brand {
+  color: #ff7a00
+;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.footer-quote {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Section Titles */
+.follow-text,
+.pay-text {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #ff7a00;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.social-icons a {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: #ff7a00
+;
+  color: #111;
+  transform: translateY(-4px);
+}
+
+/* ================= PAYMENT ICONS ================= */
+.payment-icons {
+  display: flex;
+  align-items: center;          /* 🔥 KEY FIX */
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Font Awesome Icons */
+.payment-icons i {
+  font-size: 34px;              /* SAME VISUAL HEIGHT */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Maestro Image */
+.pay-img {
+  height: 34px;                 /* 🔥 MATCH FA ICON HEIGHT */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  background: transparent;
+  transition: transform 0.3s ease;
+}
+
+/* Brand Colors */
+.fa-cc-mastercard { color: #eb001b; }
+.fa-cc-visa { color: #1a1f71; }
+.fa-cc-paypal { color: #003087; }
+.fa-cc-amex { color: #2e77bc; }
+
+/* Hover Effect */
+.payment-icons i:hover,
+.payment-icons img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.4));
+}
+
+
+
+/* Divider */
+.footer-line {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 30px 0 15px;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #9a9a9a;
+  margin-bottom: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .footer-quote {
+    margin-bottom: 12px;
+  }
+
+  .payment-icons i {
+    margin: 6px;
+  }
+}

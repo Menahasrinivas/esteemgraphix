@@ -12,7 +12,7 @@ html, body {
 
 .contact-banner {
   position: relative;
-  height: 360px;          /* 🔥 same height as other banners */
+  height: 350px;          /* 🔥 same height as other banners */
   margin-top: 60px;       /* navbar space */
   overflow: hidden;
   display: flex;
@@ -43,7 +43,7 @@ html, body {
 .contact-banner h1 {
   font-size: 42px;
   font-weight: 700;
-  color: #ff9f1c;         /* 🔥 home page orange */
+  color: darkblue;         /* 🔥 home page orange */
 }
 
 .contact-banner p {
@@ -101,7 +101,7 @@ html, body {
 
 /* ORANGE HEADINGS */
 .contact-section h3 {
-  color: #ff9f1c;
+  color: darkblue;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -155,7 +155,7 @@ html, body {
 }
 
 .enquiry-box h3 {
-  color: #ff9f1c;          /* 🔥 home page orange */
+  color: darkblue;          /* 🔥 home page orange */
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;

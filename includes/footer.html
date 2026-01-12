@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Esteem Graphix Footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap (optional but safe) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="footer.css">
+  
+</head>
+
+<body>
+
+    <footer class="site-footer">
+  <div class="container">
+
+    <!-- ROW 1 -->
+    <div class="row gy-4 align-items-center">
+
+      <!-- LEFT -->
+      <div class="col-lg-4 text-lg-start text-center">
+        <h5 class="footer-brand">Esteem Graphix</h5>
+        <p class="footer-quote">
+          Precision. Creativity. Reliability.<br>
+          Your trusted partner in Graphic Design & Digitizing.
+        </p>
+      </div>
+
+      <!-- CENTER -->
+      <div class="col-lg-4 text-center">
+        <p class="follow-text">Follow us on :</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/esteem-graphix-2952007a?originalSubdomain=in" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com/EsteemGraphix" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Esteem-Graphix/100063849498336/?fref=ts#" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT : PAYMENT (IMPORTANT FIX) -->
+      <div class="col-lg-4 text-lg-end text-center">
+        <p class="pay-text">You can pay us with</p>
+        <div class="payment-icons">
+  <i class="fab fa-cc-mastercard"></i>
+  <i class="fab fa-cc-visa"></i>
+  <i class="fab fa-cc-paypal"></i>
+  <i class="fab fa-cc-amex"></i>
+
+  <!-- Maestro Image -->
+  <img src="assets/maestro3.jpg" class="pay-img" alt="Maestro">
+</div>
+
+      </div>
+
+    </div>
+
+    <hr class="footer-line" />
+
+    <p class="copyright">Copyright
+      © <span id="year"></span> Esteem Graphix. All Rights Reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
