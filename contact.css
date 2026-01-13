@@ -13,7 +13,7 @@ html, body {
 .contact-banner {
   position: relative;
   height: 350px;          /* 🔥 same height as other banners */
-  margin-top: 60px;       /* navbar space */
+  margin-top: 70px;       /* navbar space */
   overflow: hidden;
   display: flex;
   align-items: center;

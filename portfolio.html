@@ -197,7 +197,7 @@
 <script src="js/main.js"></script>
 
 <script>
-  AOS.init({ duration: 900, once: true });
+  AOS.init({ duration: 900, once: false });
 
   
   
@@ -221,6 +221,11 @@ document.addEventListener("DOMContentLoaded", () => {
           item.style.display = "block";
         } else {
           item.style.display = "none";
+       setTimeout(() => {
+          AOS.refresh();
+        }, 50);
+
+
         }
       });
 

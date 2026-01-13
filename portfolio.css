@@ -4,7 +4,7 @@
 .portfolio-banner {
   position: relative;
   height: 350px;          /* 🔥 same height */
-  margin-top: 60px;       /* navbar space */
+  margin-top: 70px;       /* navbar space */
   overflow: hidden;
   display: flex;
   align-items: center;
