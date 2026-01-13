@@ -41,7 +41,7 @@ body {
 .faq-banner h1 {
   font-size: 42px;
   font-weight: 700;
-  color: #ff9f1c; /* brand orange */
+  color: white; /* brand orange */
 }
 
 .faq-banner p {
@@ -72,7 +72,7 @@ body {
 
 .faq-card h5 {
   font-weight: 700;
-  color: #ff9f1c;
+  color: darkblue;
   margin-bottom: 10px;
 }
 

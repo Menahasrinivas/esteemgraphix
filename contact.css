@@ -43,7 +43,7 @@ html, body {
 .contact-banner h1 {
   font-size: 42px;
   font-weight: 700;
-  color: darkblue;         /* 🔥 home page orange */
+  color: white;         /* 🔥 home page orange */
 }
 
 .contact-banner p {
@@ -97,6 +97,9 @@ html, body {
   background: transparent !important;
   box-shadow: none !important;
   padding: 10px !important;
+}
+.bank-info {
+  color: #ff9f1c !important;
 }
 
 /* ORANGE HEADINGS */
