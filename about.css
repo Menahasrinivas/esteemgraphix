@@ -148,3 +148,90 @@ body {
 * {
   max-width: 100vw;
 }
+
+
+/* Vision & Mission Boxes */
+
+/* Vision & Mission Base Styling */
+.about-box .col-md-6 {
+  padding: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+ 
+}
+
+
+
+/* Titles */
+.commit-title {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Text */
+.commit-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+.commit-card {
+  background: #8e8e8e; /* grey */
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* Hover effect (desktop only feel) */
+@media (hover: hover) {
+  .about-box .col-md-6:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .about-box .col-md-6 {
+    padding: 22px;
+  }
+
+  .commit-text {
+    font-size: 14.5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .about-box {
+    padding: 20px;
+  }
+
+  .about-box .col-md-6 {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .commit-title {
+    font-size: 18px;
+  }
+
+  .commit-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .commit-title {
+    font-size: 17px;
+  }
+
+  .commit-text {
+    font-size: 13.5px;
+  }
+}

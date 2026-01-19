@@ -4,10 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("includes/header.html")
     .then(res => res.text())
     .then(data => {
-      const header = document.getElementById("header");
-      if (header) {
-        header.innerHTML = data;
-      }
+      document.getElementById("header").innerHTML = data;
+      
     });
 
   // Load Footer
