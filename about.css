@@ -176,7 +176,7 @@ body {
   color: #555;
 }
 .commit-card {
-  background: #8e8e8e; /* grey */
+ background: linear-gradient(90deg, #7f5af0, #2cb67d);
   padding: 15px;
   border-radius: 12px;
 }
