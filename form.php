@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['send_message'])) {
   $mobile  = $_POST['mobile'];
   $message = $_POST['message'];
 
-  $to = "menaha.srini@gmail.com";
+  $to = "art@esteemgraphix.in";
   $subject = "New Enquiry from Website";
 
   $body  = "Name: $name\n";

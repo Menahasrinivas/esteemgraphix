@@ -66,21 +66,52 @@
 
 .artwork-img-box {
   height: 220px;
-  width: 320px; /* increase size – change value if needed */
+  width: 100%;
+  display: flex;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
 }
+
+/* DEFAULT: single image */
 .artwork-img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
-.artwork-img-box img:hover {
-  transform: scale(1.05);
+
+/* ONLY when there are 2 images (Before / After) */
+.artwork-img-box img + img {
+  width: 50%;
 }
-@media (max-width: 768px) {
+
+.artwork-img-box img:first-child:not(:last-child) {
+  width: 50%;
+  border-right: 2px solid #1aa3ff;
+}
+
+.artwork-img-box img:hover {
+  transform: scale(1.03);
+}
+
+/* spacing */
+.artwork-gallery-section .row {
+  row-gap: 18px;
+}
+
+  /* 🔥 MOBILE FIX – ONE IMAGE PER ROW */
+@media (max-width: 576px) {
+  .artwork-gallery-section .col-lg-3,
+.artwork-gallery-section .col-md-6,
+.artwork-gallery-section .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+     margin-bottom: 0;
+  }
+
   .artwork-img-box {
-    height: 180px;
+    height: 150px;
   }
 }
 

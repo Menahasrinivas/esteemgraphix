@@ -1,4 +1,8 @@
 /* ================= FOOTER ================= */
+body {
+  overflow-x: hidden;
+}
+
 .site-footer {
   background: linear-gradient(180deg, #0b0b0f, #0f0f24);
   padding: 50px 0 30px;
@@ -121,3 +125,46 @@
     margin: 6px;
   }
 }
+/* ================= WHATSAPP ================= */
+.whatsapp-sticky {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  width: 56px;
+  height: 56px;
+  z-index: 9999;
+  display: none;              /* 🔥 hide by default */
+}
+
+.whatsapp-sticky img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ================= PHONE ================= */
+.phone-sticky {
+  position: fixed;
+  right: 16px;
+  bottom: 90px;               /* 🔥 WhatsApp mela */
+  width: 56px;
+  height: 56px;
+  z-index: 9999;
+  display: none;              /* 🔥 hide by default */
+}
+
+.phone-sticky img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 🔥 MOBILE ONLY */
+@media (max-width: 768px) {
+  .whatsapp-sticky,
+  .phone-sticky {
+    display: flex;
+  }
+}
+
+

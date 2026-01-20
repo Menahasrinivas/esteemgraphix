@@ -85,6 +85,15 @@ body {
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   transition: all 0.35s ease;
   height: 100%;
+  
+}
+/* Who We Are image size control */
+.about-img {
+  width: 100%;          /* responsive width */
+  max-width: 600px;    /* image original limit */
+  height: 360px !important;       /* 🔽 REDUCE HEIGHT HERE */
+  object-fit: cover;   /* image crop aagama fit */
+  border-radius: 16px;
 }
 
 /* Heading */
@@ -114,6 +123,21 @@ body {
   box-shadow: 0 30px 65px rgba(127, 90, 240, 0.4);
 }
 
+/* FULL WIDTH DARK SECTION */
+.what-we-do-section {
+  background: linear-gradient(
+    135deg,
+    #05050d,
+    #0b0b1a,
+    #05050d
+  );
+
+  width: 100vw;               /* FULL screen width */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+
+  padding: 80px 0;
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
@@ -150,7 +174,26 @@ body {
 }
 
 
-/* Vision & Mission Boxes */
+/* Default (desktop / tablet) – no change */
+.about-section .row {
+  display: flex;
+}
+
+/* 🔥 MOBILE VIEW – swap image & content */
+@media (max-width: 576px) {
+
+  /* image column */
+  .about-section .row > div:first-child {
+    order: 2;   /* image goes RIGHT */
+  }
+
+  /* content column */
+  .about-section .row > div:last-child {
+    order: 1;   /* content goes LEFT */
+  }
+
+}
+
 
 /* Vision & Mission Base Styling */
 .about-box .col-md-6 {
@@ -159,9 +202,40 @@ body {
   transition: all 0.3s ease;
  
 }
+.what-we-do-img {
+  width: 100%;          /* column full width */
+  max-width: 480px;    /* 🔥 width control (increase/decrease) */
+  height: 420px !important;       /* 🔥 height control */
+  object-fit: cover;   /* image correct-ah fill aagum */
+  border-radius: 20px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+}
 
+/* REMOVE box look ONLY for What We Do section */
+.what-we-do-section .about-box {
+ 
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
 
+/* WHAT WE DO SECTION TEXT COLORS FIX */
+.what-we-do-section h3 {
+  color: #ff9f1c;   /* 🔥 YELLOW heading */
+}
 
+.what-we-do-section p,
+.what-we-do-section strong {
+  color: #ffffff;   /* 🔥 WHITE content */
+}
+.commitment-section {
+  background: #ffffff !important;
+}
+.commitment-section .about-box {
+ color: #333;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  border: none;
+}
 /* Titles */
 .commit-title {
   font-weight: 600;
@@ -180,6 +254,11 @@ body {
   padding: 15px;
   border-radius: 12px;
 }
+/* Increase height of Our Commitment box */
+.commitment-section .about-box {
+  padding: 60px 50px;   /* 🔥 increase padding */
+}
+
 
 /* Hover effect (desktop only feel) */
 @media (hover: hover) {
