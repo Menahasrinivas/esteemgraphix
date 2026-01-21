@@ -66,7 +66,8 @@
 /* ================= SERVICE CARDS ================= */
 
 .web-card {
-    background: linear-gradient(135deg, #7f5af0, #2cb67d);
+    /* background: linear-gradient(135deg, #7f5af0, #2cb67d); */
+    background: linear-gradient(135deg, rgb(0 0 0 / 90%), rgb(58 104 109 / 85%), rgb(34 34 66));
   
   border-radius: 18px;
   padding: 22px;
@@ -123,27 +124,29 @@
 
 
 /* ================= INFO BOX – PREMIUM LIGHT ================= */
-.info-box.gs-light {
+/* .info-box.gs-light {
   background: linear-gradient(135deg, #ac93f6, #2cb67d);
-}
+} */
 
 .info-box {
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(255,255,255,0.92),
     rgba(245,248,255,0.88)
-  );
+  ); */
+  background: linear-gradient(135deg, rgb(0 0 0 / 90%), rgb(58 104 109 / 85%), rgb(34 34 66));
   padding: 32px;
   border-radius: 22px;
   line-height: 1.8;
-  color: #1a1a1a;                 /* 🔥 dark text */
-  box-shadow: 0 20px 45px rgba(0,0,0,0.35);
+  color: #222 !important;                 /* 🔥 dark text */
+  /* box-shadow: 0 20px 45px rgba(0,0,0,0.35); */
   transition: all 0.35s ease;
+  font color: white;
 }
 
 /* Headings */
 .info-box h3 {
-  color: black;                 /* brand purple */
+  color: #fff;                 /* brand purple */
   font-weight: 700;
   margin-bottom: 14px;
 }
@@ -151,7 +154,7 @@
 /* Paragraphs */
 .info-box p {
   font-size: 15px;
-  color: #333;
+  color: #fff;
 }
 
 /* Hover – very subtle */
@@ -163,11 +166,12 @@
 /* ================= PROJECT COMPLETION ================= */
 
 .completion-box {
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     rgba(240,248,255,0.95),
     rgba(255,255,255,0.9)
-  );
+  ); */
+   background: linear-gradient(135deg, rgb(0 0 0 / 90%), rgb(58 104 109 / 85%), rgb(34 34 66));
    max-width: 100%;
   margin-bottom: 60px;  
 }

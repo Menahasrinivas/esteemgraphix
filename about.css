@@ -89,10 +89,10 @@ body {
 }
 /* Who We Are image size control */
 .about-img {
-  width: 100%;          /* responsive width */
-  max-width: 600px;    /* image original limit */
-  height: 360px !important;       /* 🔽 REDUCE HEIGHT HERE */
-  object-fit: cover;   /* image crop aagama fit */
+  width: 100%;          
+  max-width: 600px;    
+  height: 360px !important;       
+  object-fit: cover;   
   border-radius: 16px;
 }
 

@@ -134,7 +134,8 @@
 /* ================= FEATURE CARDS ================= */
 
 .feature-card {
-  background: linear-gradient(135deg, #4d7cff, #2cb6c5, #0f0f24);
+  /* background: linear-gradient(135deg, #4d7cff, #2cb6c5, #0f0f24); */
+  background: linear-gradient(135deg, rgb(0 0 0 / 90%), rgb(58 104 109 / 85%), rgb(34 34 66));
   border-radius: 20px;
   padding: 25px;
   height: 100%;
@@ -295,7 +296,7 @@
 }
 /* Digitizing Gallery Image Box */
 .digitize-img-box {
-  height: 220px;
+  height: 260px;
   overflow: hidden;
   
   width: 100%;
@@ -344,9 +345,10 @@ height: 100%;
   padding: 12px 34px;
   font-size: 16px;
   font-weight: 500;
-  color: #f5a623;
-  border: 2px solid #f5a623;
-  border-radius: 30px;
+ background: linear-gradient(90deg, #7f5af0, #2cb67d); 
+ color: linear-gradient(90deg, #7f5af0, #2cb67d);   
+  border: 2px solid #4d7cff;
+  border-radius: 10px;
   background-color: transparent;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -368,5 +370,26 @@ height: 100%;
     padding: 10px 26px;
     font-size: 15px;
     margin-bottom: 35px;
+  }
+}
+/* ================= DIGITIZING IMAGE ================= */
+
+.digitizing-section img {
+  max-width: 100%;
+  border-radius: 20px;              /* smooth rounded corners */
+  box-shadow: 0 25px 45px rgba(0,0,0,0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Subtle hover effect (desktop only) */
+@media (min-width: 992px) {
+  .digitizing-section img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 35px 65px rgba(0,0,0,0.45);
+  }
+}
+@media (max-width: 768px) {
+  .digitizing-section img {
+    margin-top: 25px;   /* space between content & image */
   }
 }
