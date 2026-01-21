@@ -14,7 +14,7 @@ body {
 
 }
 .navbar-logo {
-  height: 40px;        /* 🔥 perfect for navbar */
+  height: 40px;        
   width: auto;
 }
 
@@ -38,12 +38,12 @@ body {
 /* HERO IMAGE */
 .hero-img {
   max-width: 100%;
-  border: none;              /* 🔥 no border */
+  border: none;              
   animation: float 6s ease-in-out infinite;
 }
 
 .carousel-item img {
-  pointer-events: none;      /* smooth feel */
+  pointer-events: none;     
 }
 
 @keyframes float {
@@ -54,13 +54,13 @@ body {
 /* MOBILE HERO FIX */
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 70px;   /* navbar height ku space */
+    padding-top: 70px;   
   }
 }
 /* MOBILE HERO TEXT SIZE FIX */
 @media (max-width: 768px) {
   .hero-title {
-    font-size: 1.8rem;     /* mobile ku small */
+    font-size: 1.8rem;     
     line-height: 1.25;
   }
 
@@ -86,7 +86,7 @@ body {
 
 
 .about-section {
-  background: #f9f9fb;   /* single background */
+  background: #f9f9fb;   
   padding: 40px 0;
 }
 
@@ -96,7 +96,7 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 2px; 
-   font-size: 30px !important;   /* ONLY bottom gap */
+   font-size: 30px !important;   
 }
 
 /* Main title */
@@ -184,9 +184,8 @@ body {
   display: flex;
   flex-direction: column;
 
-  justify-content: flex-end;   /* 🔥 bottom */
-  align-items: flex-start;     /* 🔥 left align */
-
+  justify-content: flex-end;   
+  align-items: flex-start;    
   padding: 20px;
   color: #fff;
   opacity: 0;
@@ -225,7 +224,7 @@ body {
 @media (max-width: 768px) {
 
   .always-show-mobile .service-overlay {
-    opacity: 1;              /* always visible */
+    opacity: 1;              
     background: linear-gradient(
       rgba(0,0,0,0.25),
       rgba(0,0,0,0.15)
@@ -233,7 +232,7 @@ body {
   }
 
   .always-show-mobile img {
-    transform: none !important; /* stop zoom on mobile */
+    transform: none !important; 
   }
 
 }
@@ -265,8 +264,8 @@ body {
 
 .why-us-section h2 {
   font-size: 42px;
-  font-weight: 800;     /* 🔥 BOLD */
-  color: #000000;      /* 🔥 BLACK */
+  font-weight: 800;     
+  color: #000000;      
   margin-bottom: 8px;
 }
 
@@ -280,7 +279,7 @@ body {
 }
 .our-works-section {
  background: #eef2f7;
-  padding-top: 60px !important;   /* 🔥 force gap */
+  padding-top: 60px !important;   
   padding-bottom: 60px !important;
 }
 
@@ -294,11 +293,22 @@ body {
 
 .work-card img {
   width: 100%;
-  height: 260px;
+  height: auto;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
-
+.work-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
 /* Hover effect */
 .work-card:hover {
   transform: translateY(-10px) scale(1.02);
